@@ -57,7 +57,7 @@ app.post("/api/ussd",new AfricasTalking.USSD((params,next) => {
         response += "5. Waterloo Hostel\n"
 
         userDetails.service = services[textValue[0]] 
-    }else if(textValue.length === 2 && checkResponseValidity(textValue[0],5)){
+    }else if(textValue.length === 2 && checkResponseValidity(textValue[1],5)){
         response += "Enter your name\n"
 
         userDetails.hall = halls[textValue[1]]
